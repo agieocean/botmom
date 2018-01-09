@@ -1,5 +1,11 @@
 from tools import general, serve
+import sys
 
-g = general.GThread()
+print(sys.argv[1])
+if sys.argv[1] == "test":
+    g = general.GThread(test=True)
+else:
+    g = general.GThread()
 serve.run()
-exit()
+if sys.argv[1] == "test":
+    exit()

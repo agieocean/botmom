@@ -6,4 +6,4 @@ install:
   - pip install -r build/requirements.txt
 # command to run tests
 script:
-  - python run.py
+  - python run.py test

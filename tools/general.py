@@ -4,17 +4,18 @@ from bson import json_util
 
 
 class GThread(object):
-    def __init__(self, interval=3600):
-        self.interval = interval
-        credl = []
-        with open("credentials/credentials", "r") as f:
-            credl = f.read().split("\n")
-        self.t = Tumblpy(
-            credl[0],
-            credl[1],
-            credl[2],
-            credl[3]
-        )
+    def __init__(self, interval=3600, test=False):
+        if not test:
+            self.interval = interval
+            credl = []
+            with open("credentials/credentials", "r") as f:
+                credl = f.read().split("\n")
+            self.t = Tumblpy(
+                credl[0],
+                credl[1],
+                credl[2],
+                credl[3]
+            )
         thread = threading.Thread(target=self.run, args=())
         thread.daemon = True
         thread.start()
