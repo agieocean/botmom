@@ -1,3 +1,5 @@
 tornado
 mongoengine
 python-tumblpy
+beautifulsoup4
+Jinja2
