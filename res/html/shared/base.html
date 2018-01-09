@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+
+{% include "shared/head.html" %}
+
+<body>
+    {% if nav %}
+        {% include "shared/nav.html" %}
+    {% endif %}
+    {% block content %}{% endblock content %}
+    {% include "shared/footer.html" %}
+</body>
+
+</html>

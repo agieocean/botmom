@@ -1,0 +1,19 @@
+{% extends "shared/base.html" -%} {% block content -%}
+<main>
+    <div class="container">
+        <div class="row">
+            <div class="col s8 offset-s2">
+                <ul class="collection">
+                    {% for bot, meta in bots.items() %}
+                        <li class="collection-item">
+                            <a class="waves-effect waves-light btn" href="#">{{ bot }}</a>
+                            Next Run: {{ meta.reload }}
+                            <span class="new badge {{ meta.status_color }}" data-badge-caption="{{ meta.status_description }}"></span>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+</main>
+{%- endblock content %}
