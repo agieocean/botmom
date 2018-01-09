@@ -12,7 +12,7 @@ Python 3 [https://www.python.org/downloads/](https://www.python.org/static/img/p
 5. Register tumblr app: https://www.tumblr.com/oauth/apps
 6. Click "Explore API" under tumblr app
 7. Click "Show Keys" at the upper right corner of the screen
-8. Copy and paste the first 4 rows into credentials/credentials
+8. Copy and paste the first 4 rows into credentials/credentials (remove any existing data in file, including lines)
 9. Remove the text at the beginning of each row
 
 # Adding Your First Bot
