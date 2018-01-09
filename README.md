@@ -1,8 +1,8 @@
 [![Build Status](https://travis-ci.org/MaxLFarrell/botmom.svg?branch=master)](https://travis-ci.org/MaxLFarrell/botmom)
 
 # Requirements
-Yarn [https://circleci.com/docs/assets/img/logos/yarn-logo.svg](https://yarnpkg.com)
-Python 3 [https://www.python.org/downloads/](https://www.python.org/static/img/python-logo.png)
+Yarn <a href='https://yarnpkg.com'><img width='20%' height='20%' src='https://circleci.com/docs/assets/img/logos/yarn-logo.svg'/></a>
+Python 3 <a href='https://www.python.org/downloads/'><img src='https://www.python.org/static/img/python-logo.png'/></a>
 
 # Installation
 1. Clone the directory `git clone https://github.com/MaxLFarrell/botmom.git`
