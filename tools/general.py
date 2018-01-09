@@ -16,9 +16,9 @@ class GThread(object):
                 credl[2],
                 credl[3]
             )
-        thread = threading.Thread(target=self.run, args=())
-        thread.daemon = True
-        thread.start()
+            thread = threading.Thread(target=self.run, args=())
+            thread.daemon = True
+            thread.start()
     
     def checkFor(self):
         bdict = {}
