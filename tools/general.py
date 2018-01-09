@@ -19,6 +19,8 @@ class GThread(object):
             thread = threading.Thread(target=self.run, args=())
             thread.daemon = True
             thread.start()
+        else:
+            exit()
     
     def checkFor(self):
         bdict = {}
